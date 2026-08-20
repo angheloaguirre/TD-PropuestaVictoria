@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elévate 3.14-LEAN · Ecosistema Digital PI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar menú">✕</button>
+      <div class="brand">
+        <span class="brand-mark">3.14</span>
+        <div class="brand-text">
+          <span class="brand-name">Elévate</span>
+          <span class="brand-tag">Ecosistema Digital PI</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <button class="nav-item" data-target="inicio">
+        <span class="nav-num">00</span><span>Inicio</span>
+      </button>
+
+      <div class="nav-group">
+        <button class="nav-item" data-target="fase1">
+          <span class="nav-num">01</span><span>Definición estratégica</span>
+        </button>
+        <button class="nav-item" data-target="fase2">
+          <span class="nav-num">02</span><span>Modelo de transformación</span>
+        </button>
+        <button class="nav-item" data-target="fase3">
+          <span class="nav-num">03</span><span>Metodología</span>
+        </button>
+        <button class="nav-item" data-target="fase4">
+          <span class="nav-num">04</span><span>Roadmap</span>
+        </button>
+      </div>
+
+      <div class="nav-divider"></div>
+      <span class="nav-label">Accesos rápidos</span>
+      <button class="nav-item nav-item--ghost" data-target="fase2" data-sub="ecosistema-digital-pi">
+        <span class="nav-dot"></span><span>Ecosistema PI</span>
+      </button>
+      <button class="nav-item nav-item--ghost" data-target="fase1" data-sub="indicadores">
+        <span class="nav-dot"></span><span>Indicadores</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="maturity-badge">
+        <span class="maturity-label">Madurez digital actual</span>
+        <span class="maturity-value">Intermedio–Medio</span>
+        <div class="maturity-track"><div class="maturity-fill"></div></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="crumbs" id="crumbs">
+        <span class="crumb-phase">Inicio</span>
+      </div>
+      <div class="topbar-actions">
+        <span class="topbar-init">Procesos e Innovación</span>
+      </div>
+    </header>
+
+    <!-- SUB NAV (populated per section) -->
+    <nav class="subnav" id="subnav" aria-label="Subsecciones"></nav>
+
+    <div class="content" id="content">
+
+      <!-- ================= INICIO ================= -->
+      <section class="panel is-active" data-panel="inicio">
+
+        <section class="block hero" id="inicio-proposito" data-sub="proposito">
+          <span class="eyebrow">Propuesta de transformación digital · Procesos e Innovación</span>
+          <h1 class="hero-title">Elévate <span>3.14</span>-LEAN</h1>
+          <p class="hero-subtitle">Ecosistema Digital para la Estandarización, Automatización y Evolución de Procesos e Innovación</p>
+          <p class="hero-body">El equipo de Procesos e Innovación desarrolla y utiliza herramientas digitales de forma constante para impulsar la mejora, automatización y estandarización de procesos. Elévate 3.14-LEAN propone transformar ese trabajo disperso en un ecosistema digital gobernado, escalable y con evolución hacia inteligencia artificial.</p>
+          <div class="hero-actions">
+            <button class="btn btn--primary" data-goto="fase1">Ver definición estratégica</button>
+            <button class="btn btn--ghost" data-goto="fase4">Ver roadmap</button>
+          </div>
+        </section>
+
+        <section class="block" id="inicio-madurez" data-sub="madurez-actual">
+          <h2 class="block-title">Madurez digital actual</h2>
+          <div class="maturity-panel">
+            <div class="maturity-scale">
+              <div class="maturity-scale-track">
+                <div class="maturity-scale-marker" style="left:45%">
+                  <span class="marker-dot"></span>
+                  <span class="marker-label">Intermedio–Medio</span>
+                </div>
+              </div>
+              <div class="maturity-scale-ticks">
+                <span>Inicial</span><span>Intermedio-Bajo</span><span>Intermedio-Medio</span><span>Avanzado</span><span>Óptimo</span>
+              </div>
+            </div>
+            <p class="block-text">Bajo los criterios de madurez digital establecidos por el <strong>Ministerio de la Producción del Perú</strong>, la situación actual del equipo se asocia a un nivel <strong>Intermedio–Medio</strong>, debido al uso cotidiano de tecnologías digitales, herramientas especializadas y análisis de información. Existe una oportunidad clara de evolucionar hacia niveles superiores mediante la digitalización integral de procesos, la estructuración de datos y la adopción de soluciones escalables.</p>
+          </div>
+        </section>
+
+        <section class="block" id="inicio-vision" data-sub="vision-resumida">
+          <h2 class="block-title">Visión resumida</h2>
+          <div class="cards-grid cards-grid--2">
+            <div class="card">
+              <span class="card-tag">Visión objetivo</span>
+              <p class="card-text">Contar con un ecosistema digital propio del equipo de Procesos e Innovación, donde las herramientas internas se desarrollen bajo estándares comunes, se gestionen mediante repositorios oficiales, sean accesibles desde un punto centralizado y evolucionen hacia aplicaciones corporativas con almacenamiento estructurado, control de acceso, analítica e integración empresarial.</p>
+            </div>
+            <div class="card card--accent">
+              <span class="card-tag">Primer horizonte · 3 meses</span>
+              <p class="card-text">Formalizar estándares de desarrollo, estructura de repositorios, clasificación de herramientas, documentación mínima requerida y migración inicial de soluciones existentes.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="inicio-ecosistema" data-sub="ecosistema-visual">
+          <h2 class="block-title">Ecosistema visual</h2>
+          <p class="block-text">Un vistazo al modelo objetivo que conecta al usuario de PI con herramientas ligeras, aplicaciones core e inteligencia artificial generativa, bajo un mismo gobierno digital.</p>
+          <div class="ecosystem-teaser" id="ecosystemTeaser">
+            <!-- mini ecosystem rendered by JS / shared component -->
+          </div>
+          <button class="btn btn--text" data-goto="fase2" data-sub="ecosistema-digital-pi">Explorar el ecosistema completo →</button>
+        </section>
+
+      </section>
+
+      <!-- ================= FASE 1 ================= -->
+      <section class="panel" data-panel="fase1">
+
+        <div class="phase-head">
+          <span class="phase-eyebrow">Fase 01</span>
+          <h1 class="phase-title">Definición estratégica de la iniciativa</h1>
+          <p class="phase-lead">El punto de partida: dónde estamos, qué problema resolvemos y hacia dónde queremos llevar al ecosistema digital de Procesos e Innovación.</p>
+        </div>
+
+        <section class="block" id="f1-contexto" data-sub="contexto-actual">
+          <h2 class="block-title">Contexto actual</h2>
+          <p class="block-text">Actualmente, el equipo de Procesos e Innovación desarrolla y utiliza diversas herramientas digitales como parte de sus iniciativas de mejora, automatización y estandarización de procesos. Estas soluciones se encuentran almacenadas principalmente en repositorios colaborativos como Microsoft SharePoint, incluyendo archivos HTML, plantillas Excel y otros recursos digitales desarrollados de manera progresiva según las necesidades de cada proyecto.</p>
+          <p class="block-text">Si bien el uso de herramientas digitales y almacenamiento en nube evidencia una evolución respecto a modelos tradicionales de trabajo manual, actualmente <strong>no existe un marco estandarizado</strong> para la gestión del ciclo de vida de estas soluciones: desarrollo, versionamiento, publicación, documentación, mantenimiento y control de acceso.</p>
+        </section>
+
+        <section class="block" id="f1-problema" data-sub="problema">
+          <h2 class="block-title">Problema y oportunidad</h2>
+          <div class="cards-grid cards-grid--2">
+            <div class="card card--outline">
+              <span class="card-tag card-tag--muted">Problema</span>
+              <p class="card-text">Las herramientas desarrolladas por el equipo presentan limitaciones asociadas a la ausencia de un modelo estándar de gestión digital. La dependencia de archivos descargables, versiones almacenadas manualmente y repositorios no especializados dificulta la actualización, reutilización, trazabilidad y escalabilidad de las soluciones generadas.</p>
+            </div>
+            <div class="card card--accent" id="f1-oportunidad">
+              <span class="card-tag">Oportunidad</span>
+              <p class="card-text">Implementar un ecosistema digital interno que permita transformar herramientas aisladas en activos digitales gestionados, facilitando su acceso, mantenimiento, evolución colaborativa y el aprovechamiento de la información generada para el análisis operativo y la toma de decisiones.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f1-vision" data-sub="vision-futura">
+          <h2 class="block-title">Visión futura</h2>
+          <div class="timeline-h">
+            <div class="timeline-h-item">
+              <span class="timeline-h-tag">Visión objetivo</span>
+              <p>Ecosistema digital propio del equipo, con estándares comunes, repositorios oficiales, acceso centralizado y evolución hacia aplicaciones corporativas.</p>
+            </div>
+            <div class="timeline-h-item">
+              <span class="timeline-h-tag">Primer horizonte · 3 meses</span>
+              <p>Estándares de desarrollo, estructura de repositorios, clasificación de herramientas, documentación mínima y migración inicial.</p>
+            </div>
+            <div class="timeline-h-item">
+              <span class="timeline-h-tag">Horizonte evolutivo</span>
+              <p>Soluciones sobre infraestructura corporativa Microsoft Azure: autenticación empresarial, almacenamiento estructurado y capacidades analíticas.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f1-objetivo-general" data-sub="objetivo-general">
+          <h2 class="block-title">Objetivo general</h2>
+          <p class="block-text block-text--lead">Evolucionar el modelo actual de creación, gestión y utilización de herramientas internas de Procesos e Innovación hacia un ecosistema digital estandarizado, accesible y escalable, que permita reducir reprocesos asociados a la gestión manual del ciclo de vida de herramientas digitales, fortalecer el control de versiones y facilitar progresivamente la trazabilidad, centralización y explotación de la información generada por los procesos core del área.</p>
+        </section>
+
+        <section class="block" id="f1-objetivos-especificos" data-sub="objetivos-especificos">
+          <h2 class="block-title">Objetivos específicos</h2>
+          <div class="cards-grid cards-grid--2">
+            <div class="card card--numbered">
+              <span class="card-num">OE1</span>
+              <h3 class="card-heading">Estandarización y gobierno digital</h3>
+              <p class="card-text">Diseñar e implementar un modelo estandarizado para la creación, documentación, versionamiento, publicación y mantenimiento de herramientas digitales desarrolladas por Procesos e Innovación.</p>
+              <ul class="chip-list">
+                <li>GitHub organización</li><li>Estándares HTML/CSS/JS</li><li>Documentación</li><li>Responsables</li><li>Versiones</li>
+              </ul>
+            </div>
+            <div class="card card--numbered">
+              <span class="card-num">OE2</span>
+              <h3 class="card-heading">Evolución hacia soluciones escalables</h3>
+              <p class="card-text">Desarrollar una hoja de ruta tecnológica que permita evolucionar herramientas operativas hacia aplicaciones digitales escalables, incorporando autenticación, almacenamiento estructurado, analítica e integración corporativa.</p>
+              <ul class="chip-list">
+                <li>Azure</li><li>SQL</li><li>Entra ID</li><li>Power BI</li><li>IA futura</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f1-pilares" data-sub="pilares-estrategicos">
+          <h2 class="block-title">Pilares estratégicos</h2>
+          <div class="cards-grid cards-grid--4">
+            <div class="card card--pillar">
+              <span class="card-num">01</span>
+              <h3 class="card-heading">Gobierno y estandarización digital</h3>
+              <p class="card-text">Establecer reglas comunes para diseñar, gestionar y evolucionar herramientas digitales internas.</p>
+              <ul class="chip-list chip-list--sm"><li>Estándares</li><li>Nomenclatura</li><li>Versionamiento</li><li>Documentación</li><li>Responsables</li></ul>
+            </div>
+            <div class="card card--pillar">
+              <span class="card-num">02</span>
+              <h3 class="card-heading">Ecosistema digital de herramientas PI</h3>
+              <p class="card-text">Centralizar y facilitar el acceso a las soluciones digitales desarrolladas por el equipo.</p>
+              <ul class="chip-list chip-list--sm"><li>Repositorio oficial</li><li>Catálogo</li><li>Clasificación</li><li>Portal de acceso</li></ul>
+            </div>
+            <div class="card card--pillar">
+              <span class="card-num">03</span>
+              <h3 class="card-heading">Digitalización de procesos críticos</h3>
+              <p class="card-text">Transformar procesos internos que requieren trazabilidad, almacenamiento estructurado y explotación analítica.</p>
+              <ul class="chip-list chip-list--sm"><li>Fichas de procesos</li><li>Workload</li><li>Bases de datos</li><li>Dashboards</li></ul>
+            </div>
+            <div class="card card--pillar">
+              <span class="card-num">04</span>
+              <h3 class="card-heading">Inteligencia aumentada con IA Generativa</h3>
+              <p class="card-text">Aplicar IA Generativa para mejorar la productividad y facilitar el aprovechamiento de herramientas digitales.</p>
+              <ul class="chip-list chip-list--sm"><li>Asistente recomendador</li><li>Biblioteca de prompts</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f1-beneficios" data-sub="beneficios">
+          <h2 class="block-title">Beneficios esperados</h2>
+          <div class="card card--strategic">
+            <span class="card-tag">Beneficio estratégico principal</span>
+            <p class="card-text">Consolidar al equipo de Procesos e Innovación como el referente de madurez digital de la compañía, liderando con el ejemplo mediante la adopción de tecnologías de vanguardia.</p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-item"><span>Centralización de todas las herramientas oficiales del equipo en un único entorno</span></div>
+            <div class="benefit-item"><span>Estandarización de herramientas bajo un formato común</span></div>
+            <div class="benefit-item"><span>Mayor accesibilidad, autonomía y autoría del equipo sobre sus herramientas</span></div>
+            <div class="benefit-item"><span>Acceso y análisis simplificado de datos previamente registrados</span></div>
+            <div class="benefit-item"><span>Ejecución más ágil de proyectos y workloads</span></div>
+            <div class="benefit-item"><span>Reducción de errores humanos</span></div>
+            <div class="benefit-item"><span>Generación automática de reportes PDF, limpios y listos para compartir con clientes</span></div>
+            <div class="benefit-item"><span>Bajo costo de implementación y operación aprovechando recursos disponibles en Microsoft Azure</span></div>
+          </div>
+        </section>
+
+        <section class="block" id="f1-indicadores" data-sub="indicadores">
+          <h2 class="block-title">Indicadores</h2>
+          <div class="cards-grid cards-grid--4">
+            <div class="card card--kpi">
+              <h3 class="card-heading">1. Estandarización</h3>
+              <ul class="kpi-list">
+                <li>% herramientas bajo estándar PI</li>
+                <li>% herramientas versionadas</li>
+                <li>% herramientas con responsable y documentación</li>
+              </ul>
+            </div>
+            <div class="card card--kpi">
+              <h3 class="card-heading">2. Adopción</h3>
+              <ul class="kpi-list">
+                <li>Usuarios activos</li>
+                <li>Frecuencia de utilización</li>
+                <li>% usuarios que utilizan versión oficial</li>
+              </ul>
+            </div>
+            <div class="card card--kpi">
+              <h3 class="card-heading">3. Datos</h3>
+              <ul class="kpi-list">
+                <li>% registros core almacenados estructuradamente</li>
+                <li>Incidencias por duplicidad/inconsistencia</li>
+                <li>Tiempo para generar análisis</li>
+              </ul>
+            </div>
+            <div class="card card--kpi">
+              <h3 class="card-heading">4. Valor</h3>
+              <ul class="kpi-list">
+                <li>Horas de reproceso evitadas</li>
+                <li>Tiempo de ciclo antes/después</li>
+                <li>Satisfacción del usuario interno</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- ================= FASE 2 ================= -->
+      <section class="panel" data-panel="fase2">
+
+        <div class="phase-head">
+          <span class="phase-eyebrow">Fase 02</span>
+          <h1 class="phase-title">Modelo de transformación propuesto</h1>
+          <p class="phase-lead">De herramientas aisladas gestionadas por conocimiento individual, a activos tecnológicos internos con estándares, responsables y ciclo de vida controlado.</p>
+        </div>
+
+        <section class="block" id="f2-evolucion" data-sub="evolucion-del-modelo-operativo">
+          <h2 class="block-title">Evolución del modelo operativo digital</h2>
+          <p class="block-text">Actualmente, el equipo trabaja bajo un modelo donde las herramientas digitales surgen principalmente como respuestas puntuales a necesidades específicas de proyectos. Si bien estas soluciones permiten mejorar actividades operativas, su desarrollo y administración dependen en gran medida del conocimiento individual de sus creadores, generando oportunidades de mejora relacionadas con estandarización, reutilización, mantenimiento y escalabilidad.</p>
+          <p class="block-text">La transformación propuesta plantea evolucionar hacia un modelo donde las herramientas digitales sean gestionadas como <strong>activos tecnológicos internos del área</strong>, con estándares definidos, responsables, ciclos de vida controlados y una arquitectura progresiva que incorpore integración, analítica e inteligencia artificial.</p>
+        </section>
+
+        <section class="block" id="f2-asis" data-sub="situacion-actual-as-is">
+          <h2 class="block-title">Situación actual · AS-IS</h2>
+          <p class="block-caption">Modelo actual: desarrollo descentralizado de herramientas digitales</p>
+          <div class="flow-chain flow-chain--compact">
+            <div class="flow-step">Necesidad del proyecto</div>
+            <div class="flow-step">Desarrollo individual</div>
+            <div class="flow-step">Archivo HTML / Excel</div>
+            <div class="flow-step">SharePoint</div>
+            <div class="flow-step">Uso puntual</div>
+            <div class="flow-step">Actualización manual</div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Dimensión</th><th>Situación actual</th></tr></thead>
+              <tbody>
+                <tr><td>Desarrollo</td><td>Creación de herramientas según necesidad específica de cada iniciativa</td></tr>
+                <tr><td>Estandarización</td><td>No existe una estructura única para desarrollo, diseño o documentación</td></tr>
+                <tr><td>Versionamiento</td><td>Control principalmente manual mediante archivos almacenados</td></tr>
+                <tr><td>Publicación</td><td>Distribución mediante carpetas o intercambio de ubicaciones</td></tr>
+                <tr><td>Reutilización</td><td>Limitada por falta de catálogo y metadata de herramientas</td></tr>
+                <tr><td>Datos</td><td>Parte de la información permanece en archivos sin estructura para explotación analítica</td></tr>
+                <tr><td>Acceso</td><td>Basado principalmente en permisos de carpetas SharePoint</td></tr>
+                <tr><td>Escalabilidad</td><td>Limitada para herramientas que requieren trazabilidad, usuarios concurrentes o almacenamiento centralizado</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="block" id="f2-brechas" data-sub="brechas-identificadas">
+          <h2 class="block-title">Principales brechas identificadas</h2>
+          <div class="table-wrap">
+            <table class="data-table data-table--gaps">
+              <thead><tr><th>Brecha actual</th><th>Impacto generado</th><th>Capacidad futura requerida</th></tr></thead>
+              <tbody>
+                <tr><td>Herramientas desarrolladas sin estándar común</td><td>Mayor esfuerzo para mantenimiento y evolución</td><td>Modelo estándar de desarrollo digital</td></tr>
+                <tr><td>Dependencia de archivos descargables</td><td>Riesgo de trabajar con versiones desactualizadas</td><td>Publicación centralizada y versionada</td></tr>
+                <tr><td>Ausencia de catálogo de herramientas</td><td>Baja visibilidad y reutilización de soluciones existentes</td><td>Ecosistema digital de herramientas PI</td></tr>
+                <tr><td>Información almacenada en archivos independientes</td><td>Dificultad para análisis histórico y dashboards</td><td>Datos estructurados y centralizados</td></tr>
+                <tr><td>Dependencia del conocimiento del creador</td><td>Riesgo operativo y baja escalabilidad</td><td>Documentación y gobierno digital</td></tr>
+                <tr><td>Limitaciones de acceso y control</td><td>Dificultad para administrar usuarios y permisos</td><td>Integración con identidad corporativa</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="block" id="f2-tobe" data-sub="situacion-objetivo-to-be">
+          <h2 class="block-title">Situación objetivo · TO-BE</h2>
+          <p class="block-caption">Modelo objetivo: Ecosistema Digital PI</p>
+          <div class="flow-chain flow-chain--compact flow-chain--accent">
+            <div class="flow-step">Necesidad del usuario</div>
+            <div class="flow-step">Portal / Ecosistema Digital PI</div>
+            <div class="flow-step">Herramienta adecuada</div>
+            <div class="flow-step">Procesamiento digital</div>
+            <div class="flow-step">Resultado generado</div>
+            <div class="flow-step">Repositorio estructurado</div>
+            <div class="flow-step">Analítica y mejora continua</div>
+          </div>
+
+          <h3 class="subblock-title">Herramientas como productos digitales internos</h3>
+          <p class="block-text">Cada herramienta contará con nombre oficial, propósito definido, responsable, versión, documentación, repositorio asociado, usuarios objetivo y fecha de actualización.</p>
+          <div class="table-wrap table-wrap--narrow">
+            <table class="data-table">
+              <tbody>
+                <tr><td>Nombre</td><td>Generador SIPOC PI</td></tr>
+                <tr><td>Categoría</td><td>Herramienta ligera</td></tr>
+                <tr><td>Versión</td><td>1.0</td></tr>
+                <tr><td>Responsable</td><td>Equipo PI</td></tr>
+                <tr><td>Entrada</td><td>Información del proceso</td></tr>
+                <tr><td>Salida</td><td>Documento PDF</td></tr>
+                <tr><td>Estado</td><td>Producción</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="block" id="f2-ligeras" data-sub="herramientas-ligeras">
+          <h2 class="block-title">Herramientas ligeras</h2>
+          <div class="split-panel">
+            <div class="split-panel-text">
+              <p class="block-text">Procesamiento local, sin almacenamiento permanente, baja criticidad y rápida evolución.</p>
+              <ul class="chip-list"><li>Generadores</li><li>Formatos digitales</li><li>Validadores</li><li>Convertidores</li><li>Analizadores</li></ul>
+            </div>
+            <div class="arch-diagram">
+              <div class="arch-node">Frontend web<span>HTML + CSS + JavaScript</span></div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Procesamiento usuario</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node arch-node--result">Resultado generado<span>PDF / JSON / archivo exportable</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f2-core" data-sub="aplicaciones-core">
+          <h2 class="block-title">Aplicaciones core</h2>
+          <div class="split-panel">
+            <div class="split-panel-text">
+              <p class="block-text">Información persistente, usuarios múltiples, trazabilidad, análisis histórico y control de acceso.</p>
+              <ul class="chip-list"><li>Registro de fichas de procesos</li><li>Gestión de workload</li></ul>
+            </div>
+            <div class="arch-diagram">
+              <div class="arch-node">Usuario</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Microsoft Entra ID</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Aplicación web</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Backend / API</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">Base de datos</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node arch-node--result">Power BI</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f2-evolucion-tec" data-sub="evolucion-tecnologica-propuesta">
+          <h2 class="block-title">Evolución tecnológica propuesta</h2>
+          <div class="level-track">
+            <div class="level-card">
+              <span class="level-num">Nivel 1</span>
+              <h3 class="card-heading">Organización y estandarización</h3>
+              <p class="card-text card-text--sm"><strong>Objetivo:</strong> crear disciplina digital.</p>
+              <ul class="chip-list chip-list--sm"><li>Repositorio oficial</li><li>Estándares frontend</li><li>Documentación</li><li>Versionamiento</li><li>Catálogo</li></ul>
+              <p class="level-result">Capacidad de crear y mantener herramientas digitales de forma repetible.</p>
+            </div>
+            <div class="level-card">
+              <span class="level-num">Nivel 2</span>
+              <h3 class="card-heading">Digitalización corporativa</h3>
+              <p class="card-text card-text--sm"><strong>Objetivo:</strong> transformar herramientas aisladas en aplicaciones empresariales.</p>
+              <ul class="chip-list chip-list--sm"><li>Azure</li><li>Autenticación corporativa</li><li>Bases de datos</li><li>APIs</li><li>Dashboards</li></ul>
+              <p class="level-result">Información gestionada como activo digital.</p>
+            </div>
+            <div class="level-card level-card--accent">
+              <span class="level-num">Nivel 3</span>
+              <h3 class="card-heading">Inteligencia aumentada</h3>
+              <p class="card-text card-text--sm"><strong>Objetivo:</strong> aumentar la capacidad del equipo mediante IA Generativa.</p>
+              <ul class="chip-list chip-list--sm"><li>Asistente recomendador</li><li>Biblioteca inteligente de prompts</li><li>Apoyo en documentación</li><li>Generación asistida</li></ul>
+              <p class="level-result">Mayor productividad y aprovechamiento del conocimiento acumulado.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block block--feature" id="f2-ecosistema" data-sub="ecosistema-digital-pi">
+          <h2 class="block-title">Ecosistema Digital PI</h2>
+          <p class="block-text">La figura central del modelo objetivo: un portal único que conecta al usuario de PI con tres tipos de soluciones, gobernadas por un mismo marco transversal.</p>
+
+          <div class="ecosystem" id="ecosystemMain">
+            <div class="eco-node eco-node--user">
+              <span class="eco-node-title">Usuario PI</span>
+            </div>
+            <div class="eco-connector eco-connector--single"></div>
+            <div class="eco-node eco-node--portal">
+              <span class="eco-node-title">Portal / Catálogo PI</span>
+            </div>
+            <div class="eco-connector eco-connector--branch"></div>
+            <div class="eco-branches">
+              <div class="eco-branch" data-detail="Procesamiento local, sin almacenamiento permanente. Ideal para generadores, validadores, convertidores y analizadores de baja criticidad.">
+                <span class="eco-branch-title">Herramientas ligeras</span>
+                <ul>
+                  <li>HTML / CSS / JS</li>
+                  <li>Procesamiento local</li>
+                  <li>PDF / JSON</li>
+                </ul>
+              </div>
+              <div class="eco-branch eco-branch--accent" data-detail="Información persistente con usuarios múltiples, trazabilidad y control de acceso mediante identidad corporativa.">
+                <span class="eco-branch-title">Aplicaciones core</span>
+                <ul>
+                  <li>Frontend Web</li>
+                  <li>Backend / API</li>
+                  <li>Azure SQL</li>
+                  <li>Microsoft Entra ID</li>
+                  <li>Power BI</li>
+                </ul>
+              </div>
+              <div class="eco-branch" data-detail="Capa de evolución del ecosistema: un asistente que recomienda herramientas y automatiza tareas repetitivas del equipo.">
+                <span class="eco-branch-title">IA Generativa <em>(evolución)</em></span>
+                <ul>
+                  <li>Recomendación</li>
+                  <li>Automatización</li>
+                  <li>Asistencia</li>
+                </ul>
+              </div>
+            </div>
+            <div class="eco-gov">
+              <span class="eco-gov-title">Gobierno Digital PI</span>
+              <div class="eco-gov-items">
+                <span>Estándares</span><span>Versionamiento</span><span>Seguridad</span><span>Documentación</span><span>Responsables</span><span>Mejora continua</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="subblock-title">Conexión con la metodología: Fase 2 como Define + Develop</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Double Diamond</th><th>Aplicación en Elévate 3.14-LEAN</th></tr></thead>
+              <tbody>
+                <tr><td>Discover</td><td>Diagnóstico actual, inventario, identificación de brechas</td></tr>
+                <tr><td>Define</td><td>Modelo objetivo, clasificación, arquitectura</td></tr>
+                <tr><td>Develop</td><td>Desarrollo de estándares, repositorio, pilotos</td></tr>
+                <tr><td>Deliver</td><td>Implementación, medición, escalamiento</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- ================= FASE 3 ================= -->
+      <section class="panel" data-panel="fase3">
+
+        <div class="phase-head">
+          <span class="phase-eyebrow">Fase 03</span>
+          <h1 class="phase-title">Metodología de implementación</h1>
+          <p class="phase-lead">Double Diamond define qué explorar y diseñar. Lean Digital Delivery define cómo construir y mejorar progresivamente. El gobierno TI transversal asegura que todo escale con seguridad.</p>
+        </div>
+
+        <section class="block" id="f3-doublediamond" data-sub="double-diamond">
+          <h2 class="block-title">Double Diamond</h2>
+          <p class="block-text">Marco principal de diseño y transformación: permite abordar la iniciativa desde la comprensión del problema hasta la implementación de soluciones, alternando etapas de exploración y definición.</p>
+
+          <div class="diamond-diagram">
+            <div class="diamond-half">
+              <div class="diamond-shape diamond-shape--open"><span>Discover</span></div>
+              <div class="diamond-shape diamond-shape--close"><span>Define</span></div>
+            </div>
+            <div class="diamond-label">Problema</div>
+            <div class="diamond-half">
+              <div class="diamond-shape diamond-shape--open"><span>Develop</span></div>
+              <div class="diamond-shape diamond-shape--close"><span>Deliver</span></div>
+            </div>
+            <div class="diamond-label">Solución</div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Etapa</th><th>Aplicación en la iniciativa</th></tr></thead>
+              <tbody>
+                <tr><td>Discover</td><td>Analizar situación actual, inventariar herramientas existentes, identificar necesidades y restricciones</td></tr>
+                <tr><td>Define</td><td>Definir modelo objetivo, estándares, clasificación de herramientas y arquitectura futura</td></tr>
+                <tr><td>Develop</td><td>Diseñar estándares, construir repositorio, migrar herramientas piloto y desarrollar primeras soluciones</td></tr>
+                <tr><td>Deliver</td><td>Implementar, validar usuarios, medir resultados y definir escalamiento</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="block" id="f3-lean" data-sub="lean-digital-delivery">
+          <h2 class="block-title">Lean Digital Delivery</h2>
+          <p class="block-text">Mientras Double Diamond define <strong>qué</strong> explorar y diseñar, Lean Digital Delivery define <strong>cómo</strong> construir y mejorar progresivamente.</p>
+
+          <div class="flow-chain flow-chain--loop">
+            <div class="flow-step">Construir</div>
+            <div class="flow-step">Validar</div>
+            <div class="flow-step">Medir</div>
+            <div class="flow-step">Aprender</div>
+            <div class="flow-step">Mejorar</div>
+          </div>
+
+          <p class="block-caption">Enfoque Lean Digital aplicado</p>
+          <div class="flow-chain flow-chain--compact flow-chain--accent">
+            <div class="flow-step">Crear catálogo básico</div>
+            <div class="flow-step">Validar con usuarios PI</div>
+            <div class="flow-step">Ajustar</div>
+            <div class="flow-step">Migrar primeras herramientas</div>
+            <div class="flow-step">Escalar</div>
+          </div>
+
+          <ul class="check-list">
+            <li>Entrega valor temprano</li>
+            <li>Reduce incertidumbre</li>
+            <li>Permite aprender antes de invertir más recursos</li>
+          </ul>
+        </section>
+
+        <section class="block" id="f3-gobierno" data-sub="gobierno-ti-transversal">
+          <h2 class="block-title">Gobierno TI como marco transversal</h2>
+          <p class="block-text">La evolución contempla progresivamente componentes corporativos: Microsoft Azure, Microsoft Entra ID, bases de datos, integración con Power BI y control de accesos. Por ello, la iniciativa debe ejecutarse considerando validaciones con TI.</p>
+          <p class="block-text">Esto no significa que TI sea responsable del desarrollo de todas las soluciones, sino que participa como habilitador para asegurar:</p>
+          <div class="chip-list chip-list--lg">
+            <span>Arquitectura adecuada</span><span>Seguridad</span><span>Cumplimiento</span><span>Uso correcto de infraestructura corporativa</span>
+          </div>
+        </section>
+
+        <section class="block" id="f3-principios" data-sub="principios-de-implementacion">
+          <h2 class="block-title">Principios de implementación</h2>
+          <div class="cards-grid cards-grid--4">
+            <div class="card card--pillar">
+              <span class="card-num">01</span>
+              <h3 class="card-heading">Evolución incremental</h3>
+              <p class="card-text">La transformación se realizará mediante entregas progresivas, priorizando resultados rápidos antes de escalar soluciones de mayor complejidad.</p>
+            </div>
+            <div class="card card--pillar">
+              <span class="card-num">02</span>
+              <h3 class="card-heading">Primero estandarizar, luego escalar</h3>
+              <p class="card-text">Antes de incorporar arquitecturas más complejas, se establecerán estándares comunes de desarrollo, documentación y gestión.</p>
+            </div>
+            <div class="card card--pillar">
+              <span class="card-num">03</span>
+              <h3 class="card-heading">Arquitectura proporcional a la necesidad</h3>
+              <p class="card-text">No todas las herramientas requieren la misma complejidad tecnológica.</p>
+            </div>
+            <div class="card card--pillar">
+              <span class="card-num">04</span>
+              <h3 class="card-heading">Datos como activo digital</h3>
+              <p class="card-text">La información de los procesos core evolucionará hacia estructuras que permitan trazabilidad, análisis histórico, indicadores y toma de decisiones.</p>
+            </div>
+          </div>
+
+          <div class="table-wrap table-wrap--narrow">
+            <table class="data-table">
+              <thead><tr><th>Tipo</th><th>Arquitectura</th></tr></thead>
+              <tbody>
+                <tr><td>Herramienta ligera</td><td>Frontend web + procesamiento local</td></tr>
+                <tr><td>Aplicación core</td><td>Frontend + Backend + BD + seguridad</td></tr>
+                <tr><td>Solución inteligente</td><td>Aplicación + datos + IA</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="block" id="f3-fases-op" data-sub="fases-operativas">
+          <h2 class="block-title">Fases operativas de implementación</h2>
+          <div class="accordion" id="accordionFases">
+            <div class="accordion-item is-open">
+              <button class="accordion-trigger">
+                <span class="accordion-num">Fase 1</span>
+                <span class="accordion-name">Descubrimiento y diagnóstico</span>
+                <span class="accordion-chevron">⌄</span>
+              </button>
+              <div class="accordion-panel">
+                <p><strong>Objetivo:</strong> comprender el estado actual.</p>
+                <p><strong>Actividades:</strong> inventario de herramientas, clasificación, identificación de usuarios, análisis de necesidades.</p>
+                <p class="accordion-deliverable">Entregable · Diagnóstico AS-IS del ecosistema digital PI</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">Fase 2</span>
+                <span class="accordion-name">Diseño del modelo objetivo</span>
+                <span class="accordion-chevron">⌄</span>
+              </button>
+              <div class="accordion-panel">
+                <p><strong>Objetivo:</strong> definir cómo funcionará el ecosistema.</p>
+                <p><strong>Actividades:</strong> estándar de desarrollo, estructura de repositorios, modelo de catálogo, arquitectura conceptual, criterios herramienta ligera/core.</p>
+                <p class="accordion-deliverable">Entregable · Modelo TO-BE Elévate 3.14-LEAN</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">Fase 3</span>
+                <span class="accordion-name">Construcción del MVP digital</span>
+                <span class="accordion-chevron">⌄</span>
+              </button>
+              <div class="accordion-panel">
+                <p><strong>Objetivo:</strong> implementar una primera versión funcional.</p>
+                <p><strong>Actividades:</strong> creación de repositorio oficial, migración de herramientas piloto, publicación de catálogo, documentación.</p>
+                <p class="accordion-deliverable">Entregable · Primer ecosistema digital operativo</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">Fase 4</span>
+                <span class="accordion-name">Digitalización core</span>
+                <span class="accordion-chevron">⌄</span>
+              </button>
+              <div class="accordion-panel">
+                <p><strong>Objetivo:</strong> implementar una primera aplicación con arquitectura escalable.</p>
+                <p><strong>Candidato:</strong> registro de fichas de procesos.</p>
+                <p><strong>Actividades:</strong> diseño funcional, modelo de datos, validación TI, desarrollo piloto.</p>
+                <p class="accordion-deliverable">Entregable · Aplicación core PI MVP</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">Fase 5</span>
+                <span class="accordion-name">Medición y escalamiento</span>
+                <span class="accordion-chevron">⌄</span>
+              </button>
+              <div class="accordion-panel">
+                <p><strong>Objetivo:</strong> evaluar resultados y definir evolución.</p>
+                <p><strong>Actividades:</strong> medir indicadores, recopilar feedback, priorizar nuevas soluciones.</p>
+                <p class="accordion-deliverable">Entregable · Roadmap de evolución digital PI</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- ================= FASE 4 ================= -->
+      <section class="panel" data-panel="fase4">
+
+        <div class="phase-head">
+          <span class="phase-eyebrow">Fase 04</span>
+          <h1 class="phase-title">Roadmap de implementación</h1>
+          <p class="phase-lead">Ocho semanas, dos líneas de trabajo complementarias, un mismo destino: un ecosistema digital PI estandarizado y escalable.</p>
+        </div>
+
+        <section class="block" id="f4-explicacion" data-sub="explicacion-del-roadmap">
+          <h2 class="block-title">Explicación del roadmap</h2>
+          <p class="block-text">El roadmap de Elévate 3.14-LEAN se ejecutará mediante dos líneas de trabajo complementarias, articuladas con las fases operativas definidas en la metodología:</p>
+          <div class="cards-grid cards-grid--2">
+            <div class="card card--stream">
+              <span class="card-tag">Stream A</span>
+              <h3 class="card-heading">Transformación interna PI</h3>
+              <p class="card-text">Orientado a generar capacidades digitales internas, estandarizar herramientas y construir el ecosistema digital del área. Independiente de TI.</p>
+            </div>
+            <div class="card card--stream card--stream-b">
+              <span class="card-tag">Stream B</span>
+              <h3 class="card-heading">Habilitación tecnológica TI</h3>
+              <p class="card-text">Orientado a validar y habilitar progresivamente la infraestructura tecnológica necesaria para soluciones escalables.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="f4-streamA" data-sub="stream-a-transformacion-interna-pi">
+          <h2 class="block-title">Stream A · Transformación interna PI</h2>
+          <div class="gantt" id="ganttA"></div>
+        </section>
+
+        <section class="block" id="f4-streamB" data-sub="stream-b-habilitacion-tecnologica-ti">
+          <h2 class="block-title">Stream B · Habilitación tecnológica TI</h2>
+          <div class="gantt" id="ganttB"></div>
+        </section>
+
+        <section class="block" id="f4-completo" data-sub="gantt-completo">
+          <h2 class="block-title">Gantt completo</h2>
+          <p class="block-text">Ambos streams en una sola línea de tiempo de 8 semanas, mostrando cómo la habilitación tecnológica de TI acompaña la transformación interna de PI.</p>
+          <div class="gantt-legend">
+            <span><i class="legend-dot legend-dot--a"></i> Stream A · PI</span>
+            <span><i class="legend-dot legend-dot--b"></i> Stream B · TI</span>
+          </div>
+          <div class="gantt gantt--full" id="ganttFull"></div>
+        </section>
+
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
