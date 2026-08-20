@@ -388,7 +388,7 @@ button {
 .maturity-fill {
   height: 100%;
   width: 45%;
-  background: var(--accent);
+  background: var(--brand-warning);
   border-radius: 2px;
 }
 
